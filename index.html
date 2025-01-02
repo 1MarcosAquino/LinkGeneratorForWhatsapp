@@ -1,9 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Gerar Link do WhatsApp</title>
     </head>
-    <body></body>
+    <body>
+        <h1>Gerar Link do WhatsApp</h1>
+        <form>
+            <label for="telefone">Número do WhatsApp</label>
+            <input
+                id="telefone"
+                name="telefone"
+                type="text"
+                placeholder="Digite o número com DDD"
+                required />
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Digite a mensagem"></textarea>
+
+            <label for="saida">Link Gerado</label>
+            <textarea
+                id="saida"
+                class="output"
+                readonly
+                placeholder="O link aparecerá aqui"></textarea>
+
+            <button id="gerar" type="button">Gerar e Copiar</button>
+        </form>
+    </body>
 </html>
